@@ -1,0 +1,172 @@
+@import "templateProjectPageHeader";
+
+input[type=checkbox]{
+    visibility: hidden;
+}
+.text-center{
+    font-family: $fontBody;
+    color:$NIGHTFALL;
+    background-color: $HEATWAVE;
+}
+.regButton{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    cursor: pointer;
+    border: 20px solid $NIGHTFALL;
+    margin: -4px;
+}
+.ul{
+    border-top-left-radius: 100%;
+    background-color: #00a749;
+}
+.ul.bright{
+    background-color: #00ff6f;
+}
+.ur{
+    border-top-right-radius: 100%;
+    background-color: #9f0f16;
+    box-shadow: 10px 10px 5px 0 rgba(53,28,77,0.75);
+}
+.ur.bright{
+    background-color: #ff000d;
+}
+.lr{
+    border-bottom-right-radius: 100%;
+    background-color: #094b8f;
+    box-shadow: 10px 10px 5px 0 rgba(53,28,77,0.75);
+}
+.lr.bright{
+    background-color: #1387ff;
+}
+.ll{
+    border-bottom-left-radius: 100%;
+    background-color: #cca707;
+    box-shadow: 10px 10px 5px 0 rgba(53,28,77,0.75);
+}
+.ll.bright{
+    background-color: #ffcf00;
+}
+.cover{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    border: 12px solid $NIGHTFALL;
+    border-radius: 100%;
+    background-color: $SUNSET;
+    margin-left: -120px;
+    margin-top: -120px;
+}
+.checkboxPlayMode{
+    width:30px;
+    height:30px;
+    background: $PARADISE;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(53,28,77,.5);
+    margin: auto;
+    margin-top: 10%;
+}
+.checkboxPlayMode label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    background: $NIGHTFALL;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    box-shadow: inset 0 1px 3px rgba(53,28,77,.5);
+}
+.checkboxPlayMode input[type=checkbox]:checked + label{
+    background: $TROPICALPINK;
+}
+.checkboxStart{
+    width: 120px;
+    height: 40px;
+    background: $NIGHTFALL;
+    margin: auto;
+    border-radius: 50px;
+    position: relative;
+}
+.checkboxStart:before{
+    content: "On";
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    height: 2px;
+    font-size: 16px;
+    color: $TROPICALPINK;
+}
+.checkboxStart:after{
+    content: "Off";
+    position: absolute;
+    top: 12px;
+    left: 84px;
+    height: 2px;
+    font-size: 16px;
+    color: $PARADISE;
+}
+.checkboxStart label{
+    display: block;
+    width: 52px;
+    height:22px;
+    border-radius: 50px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top:9px;
+    z-index: 1;
+    left: 12px;
+    background: $PARADISE;
+}
+.checkboxStart input[type=checkbox]:checked + label{
+    left: 60px;
+    background: $TROPICALPINK;
+}
+h1{
+    font-size: 48px;
+    display: block;
+}
+h2{
+    font-family: $fontBody;
+}
+h3{
+    margin-top: 0;
+}
+.row{
+    margin: 30px;
+}
+.col-md-4{
+    padding: 0;
+}
+.stepDisplay{
+    background: $NIGHTFALL;
+    border: 2px solid $NIGHTFALL;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 30px;
+    color: $TROPICALPINK;
+}
+.face{
+    margin-top: 32%;
+    margin-left:35%;
+    font-size: 410px;
+    transform: translate(-60%,-20%);
+}
+.simonGame{
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    position:relative;
+    top: 15px;
+}
+.buttonWrapper{
+    position: relative;
+    top: 12px;
+}
