@@ -355,11 +355,11 @@ input[type=checkbox] {
   background-color: #FF7E5F; }
 
 .regButton {
-  width: 400px;
-  height: 400px;
+  width: 28.5em;
+  height: 28.5em;
   display: inline-block;
   cursor: pointer;
-  border: 20px solid #351C4D;
+  border: 2em solid #351C4D;
   margin: -4px; }
 
 .ul {
@@ -394,13 +394,13 @@ input[type=checkbox] {
   background-color: #ffcf00; }
 
 .cover {
-  width: 400px;
-  height: 400px;
+  width: 28.5em;
+  height: 28.5em;
   position: absolute;
   left: 40%;
   top: 40%;
   border: 12px solid #351C4D;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #FEB47B;
   margin-left: -120px;
   margin-top: -120px; }
@@ -412,8 +412,7 @@ input[type=checkbox] {
   border-radius: 100%;
   position: relative;
   box-shadow: 0 1px 3px rgba(53, 28, 77, 0.5);
-  margin: auto;
-  margin-top: 10%; }
+  margin: auto; }
 
 .checkboxPlayMode label {
   display: block;
@@ -433,40 +432,38 @@ input[type=checkbox] {
   background: #F5AB99; }
 
 .checkboxStart {
-  width: 120px;
-  height: 40px;
+  width: 9em;
+  height: 3em;
   background: #351C4D;
-  margin: auto;
+  margin: 1em auto;
   border-radius: 50px;
   position: relative; }
 
 .checkboxStart:before {
   content: "On";
   position: absolute;
-  top: 12px;
-  left: 13px;
-  height: 2px;
-  font-size: 16px;
+  top: .75em;
+  left: .8em;
+  font-size: 1.6rem;
   color: #F5AB99; }
 
 .checkboxStart:after {
   content: "Off";
   position: absolute;
-  top: 12px;
-  left: 84px;
-  height: 2px;
-  font-size: 16px;
+  top: .75em;
+  left: 5.5em;
+  font-size: 1.6rem;
   color: #765285; }
 
 .checkboxStart label {
   display: block;
-  width: 52px;
-  height: 22px;
+  width: 4em;
+  height: 1.5em;
   border-radius: 50px;
   transition: all .5s ease;
   cursor: pointer;
   position: absolute;
-  top: 9px;
+  top: .75em;
   z-index: 1;
   left: 12px;
   background: #765285; }
@@ -485,35 +482,40 @@ h2 {
 h3 {
   margin-top: 0; }
 
-.row {
-  margin: 30px; }
-
-.col-md-4 {
-  padding: 0; }
-
 .stepDisplay {
   background: #351C4D;
   border: 2px solid #351C4D;
   border-radius: 10px;
-  width: 100%;
-  font-size: 30px;
+  width: 50%;
+  font-size: 2rem;
   color: #F5AB99; }
 
 .face {
-  margin-top: 32%;
-  margin-left: 35%;
-  font-size: 410px;
-  transform: translate(-60%, -20%); }
+  font-size: 30em;
+  position: absolute;
+  top: -.25em;
+  left: -.05em; }
 
 .simonGame {
-  width: 800px;
-  height: 800px;
+  width: 57em;
+  height: auto;
   margin: auto;
-  position: relative;
-  top: 15px; }
+  position: relative; }
 
-.buttonWrapper {
-  position: relative;
-  top: 12px; }
+table {
+  width: 100%; }
 
-/*# sourceMappingURL=styles_quotes.csstes.css.map */
+td {
+  width: 33%; }
+
+.controlLabels {
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+.simonLabel {
+  font-family: "Cuadradex", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  margin-top: 1em; }
+
+/*# sourceMappingURL=styles.css.map */

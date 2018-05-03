@@ -23,7 +23,7 @@ $(document).ready(function () {
     var woohoo = $("#WooHoo")[0];
     //isRunning is a limited way to reduce user errors
     var isRunning = false;
-
+    // $(".cover").html("<span class='face'>" + aFaceUnicode + "</span>");
     //this is the interactive routine that runs when the user clicks one of the four colored buttons
 
     $(".regButton").click(function (e) {
@@ -38,7 +38,7 @@ $(document).ready(function () {
                 }, 1000);
                 buzzer.play();
                 aFace = $(".cover").contents();
-                $(".cover").html("<h1 class='face'>" + aFaceUnicode + "</h1>");
+                $(".cover").html("<span class='face'>" + aFaceUnicode + "</span>");
                 numTurn = 0;
                 //if the button id# is the same as the one stored in the array for this click sequence, flash the button, play the button's sound, and continue
             } else {
@@ -54,7 +54,7 @@ $(document).ready(function () {
                                 winGame();
                             }, 1000);
                             hFace = $(".cover").contents();
-                            $(".cover").html("<h1 class='face'>" + hFaceUnicode + "</h1>");
+                            $(".cover").html("<span class='face'>" + hFaceUnicode + "</span>");
                             woohoo.play();
                         } else {
                             playTurn();

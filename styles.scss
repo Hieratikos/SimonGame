@@ -1,5 +1,7 @@
 @import "../styles/templateProjectPageHeader";
 
+$simonSize:57em;
+
 input[type=checkbox]{
     visibility: hidden;
 }
@@ -9,11 +11,12 @@ input[type=checkbox]{
     background-color: $HEATWAVE;
 }
 .regButton{
-    width: 400px;
-    height: 400px;
+    width: $simonSize/2;
+    height: $simonSize/2;;
+    //height: 400px;
     display: inline-block;
     cursor: pointer;
-    border: 20px solid $NIGHTFALL;
+    border: 2em solid $NIGHTFALL;
     margin: -4px;
 }
 .ul{
@@ -48,13 +51,14 @@ input[type=checkbox]{
     background-color: #ffcf00;
 }
 .cover{
-    width: 400px;
-    height: 400px;
+    width: $simonSize/2;
+    height: $simonSize/2;
+    //height: 400px;
     position: absolute;
     left: 40%;
     top: 40%;
     border: 12px solid $NIGHTFALL;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: $SUNSET;
     margin-left: -120px;
     margin-top: -120px;
@@ -67,7 +71,7 @@ input[type=checkbox]{
     position: relative;
     box-shadow: 0 1px 3px rgba(53,28,77,.5);
     margin: auto;
-    margin-top: 10%;
+    //margin-top: 10%;
 }
 .checkboxPlayMode label{
     display: block;
@@ -87,40 +91,42 @@ input[type=checkbox]{
     background: $TROPICALPINK;
 }
 .checkboxStart{
-    width: 120px;
-    height: 40px;
+    width: 9em;
+    height: 3em;
     background: $NIGHTFALL;
-    margin: auto;
+    margin: 1em auto;
     border-radius: 50px;
     position: relative;
 }
 .checkboxStart:before{
     content: "On";
     position: absolute;
-    top: 12px;
-    left: 13px;
-    height: 2px;
-    font-size: 16px;
+    top: .75em;
+    left: .8em;
+    font-size: 1.6rem;
     color: $TROPICALPINK;
 }
 .checkboxStart:after{
     content: "Off";
     position: absolute;
-    top: 12px;
-    left: 84px;
-    height: 2px;
-    font-size: 16px;
+    top: .75em;
+    left: 5.5em;
+    //height: 2px;
+    font-size: 1.6rem;
     color: $PARADISE;
 }
 .checkboxStart label{
     display: block;
-    width: 52px;
-    height:22px;
+    //width: 52px;
+    width:4em;
+    //height:22px;
+    height:1.5em;
     border-radius: 50px;
     transition: all .5s ease;
     cursor: pointer;
     position: absolute;
-    top:9px;
+    //top:9px;
+    top:.75em;
     z-index: 1;
     left: 12px;
     background: $PARADISE;
@@ -139,34 +145,58 @@ h2{
 h3{
     margin-top: 0;
 }
-.row{
-    margin: 30px;
-}
-.col-md-4{
-    padding: 0;
-}
+//.row{
+//    margin: 30px;
+//}
+//.col-md-4{
+//    padding: 0;
+//}
 .stepDisplay{
     background: $NIGHTFALL;
     border: 2px solid $NIGHTFALL;
     border-radius: 10px;
-    width: 100%;
-    font-size: 30px;
+    width: 50%;
+    font-size: 2rem;
     color: $TROPICALPINK;
 }
 .face{
-    margin-top: 32%;
-    margin-left:35%;
-    font-size: 410px;
-    transform: translate(-60%,-20%);
+    //border: 1px solid black;
+    //margin-top: 32%;
+    //margin-left:35%;
+    //font-size: 410px;
+    font-size: 30em;
+    position: absolute;
+    top: -.25em;
+    left: -.05em;
+    //transform: translate(-60%,-20%);
 }
 .simonGame{
-    width: 800px;
-    height: 800px;
+    //width: 800px;
+    width: $simonSize;
+    height: auto;
     margin: auto;
     position:relative;
-    top: 15px;
+    //top: 15px;
+    //border: 1px solid black;
 }
 .buttonWrapper{
-    position: relative;
-    top: 12px;
+    //position: relative;
+    //top: 12px;
+}
+table{
+    width:100%;
+    //border: 1px solid black;
+}
+td{
+    width:33%;
+}
+.controlLabels{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+.simonLabel{
+    font-family:$fontHeadings;
+    font-size:6rem;
+    font-weight:bold;
+    margin-top:1em;
 }
